@@ -13,7 +13,7 @@ updated 27/10/2026
 <meta name="description" content="Opsecware is a free ratproject for Linux larp niggas, including Roblox under Fedora and Arch btw">
 <meta name="theme-color" content="#050a14">
 <link rel="icon" href="img/logo.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/site.css?v=3">
+<link rel="stylesheet" href="assets/site.css?v=4">
 <style>
 :root {
     --bg: #050a14;
@@ -55,27 +55,14 @@ updated 27/10/2026
     padding: 0;
     list-style-position: inside;
 }
-.hand a {
+.hand a:not(.download) {
     color: var(--accent);
 }
-.hand a:hover {
+.hand a:not(.download):hover {
     color: var(--ink);
 }
 .hand .download {
-    margin-top: 18px;
-    display: inline-block;
-    padding: 10px 16px;
-    border: 1px solid var(--rule-strong);
-    background: rgba(89, 165, 255, 0.12);
-    color: var(--ink);
-    text-decoration: none;
-    font: 700 13px monospace;
-    letter-spacing: 0.04em;
-    text-transform: lowercase;
-}
-.hand .download:hover {
-    background: rgba(89, 165, 255, 0.2);
-    border-color: rgba(89, 165, 255, 0.5);
+    margin: 18px auto 0;
 }
 </style>
 </head>
@@ -92,8 +79,8 @@ updated 27/10/2026
         <li><a href="https://linusware.org/offsets/">offsets</a></li>
         <li><a href="https://linusware.org/credits">credits</a></li>
     </ul>
-    <a class="download" href="https://github.com/bigbetabuild/linusware/archive/refs/heads/main.zip" download="linusware.zip">download linusware</a>
+    <a class="btn primary download" href="https://github.com/bigbetabuild/linusware/archive/refs/heads/main.zip" download="linusware.zip">Download website source (.zip)</a>
 </main>
-<script src="assets/bg.js?v=3"></script>
+<script src="assets/bg.js?v=4"></script>
 </body>
 </html>
