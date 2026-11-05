@@ -103,7 +103,7 @@ void main() {
     const u = (n) => gl.getUniformLocation(prog, n);
     const U = { res: u("u_res"), scale: u("u_scale"), time: u("u_time"), mouse: u("u_mouse"), motion: u("u_motion"), bg: u("u_bg"), line: u("u_line"), glint: u("u_glint") };
 
-    const want = { bg: [0.0196, 0.0588, 0.0314], line: [0.022, 0.27, 0.11], glint: [0.30, 1.0, 0.58] };
+    const want = { bg: [0.0157, 0.0314, 0.0784], line: [0.025, 0.13, 0.36], glint: [0.30, 0.58, 1.0] };
     const pal = { bg: [...want.bg], line: [...want.line], glint: [...want.glint] };
 
     const reduce = matchMedia("(prefers-reduced-motion: reduce)");
